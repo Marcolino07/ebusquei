@@ -11,7 +11,6 @@
 <style>
     :root{
     --sideLeft: 0%;
-    /* --sideRight: 0%; */
     --color: aqua;
 }
 </style>
