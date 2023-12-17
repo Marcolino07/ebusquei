@@ -1,0 +1,45 @@
+/* FOOTER=========================================================FOOTER========================================================== */
+
+footer {
+    color: #fff;
+}
+
+footer > div {
+    padding: var(--margin);
+}
+
+footer > div:first-child {
+    background-color: #727272;
+}
+
+footer > div:last-child {
+    background-color: rgb(27, 27, 27);
+}
+
+footer address a{
+    color: var(--MainColor-1);
+    margin: 1rem auto;
+    line-height: 2rem;
+    font-weight: bold;
+    font-size: .9rem;
+    text-decoration-line: none;
+}
+
+footer div:first-child  ul:first-child {
+    width: 75%;
+    font-size: .9rem;
+    margin-right: calc(4 * var(--margin));
+}
+
+footer ul {
+    opacity: .9;
+    font-size: 1.1rem;
+    list-style: none;
+    padding: var(--margin);
+}
+
+footer ul li:first-child {
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-style: normal;
+}

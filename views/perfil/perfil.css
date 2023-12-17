@@ -1,0 +1,121 @@
+#tela-perfil .btn-back:not(.mobile .btn-back){
+    display: none!important;
+}
+
+#tela-perfil div{
+    margin: var(--margin) 0;
+}
+
+#btn-senha, #btn-telefone {
+    cursor: pointer;
+    color: white;
+}
+#btn-senha:hover, #btn-telefone:hover {
+    text-decoration: underline;
+}
+
+#tela-flutuante {
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - var(--header))!important;
+    background-color: #00000089;
+}
+
+#tela-flutuante .fa-close {
+    float: right;
+
+    cursor: pointer;
+    font-size: large;
+    padding: .5rem  0 .5rem .5rem;
+}
+
+
+#tela-flutuante > div {
+    position: absolute;
+    min-width: 400px;
+    width: 50%;
+    padding: 1.5rem 2rem;
+    border-radius: var(--radius-3);
+    background-color: azure;
+}
+
+#tela-flutuante > div > div {
+    display: none;
+}
+
+#tela-flutuante > div *:not(i) {
+    width: 100%;
+}
+
+#tela-flutuante h2, #tela-flutuante div p {
+    margin-bottom: var(--margin);
+}
+
+#tela-flutuante button {
+    background-color: var(--color);
+}
+
+#tela-perfil input {
+    width: 100%;
+}
+
+#tela-perfil {
+    margin: auto;
+}
+
+#salvar-senha {
+    background: rgb(2, 174, 2)!important;
+}
+
+
+/* TOKEN TELA – – – – – – – – – – ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————— --> */
+
+div#dv-token {
+    align-items: center;
+}
+
+
+#dv-token button,
+#dv-token input
+{
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+    width: 100%;
+}
+
+#tokenConfirm {
+    height: 2rem;
+}
+
+#tokenInput {
+    margin: 1rem 0;
+}
+
+
+#dv-token label
+{
+    color: var(--color);
+}
+
+#dv-token input
+{
+    letter-spacing: 5px;
+}
+
+#dv-token input::placeholder {
+    letter-spacing: 1px!important;
+}
+
+
+#dv-token button
+{
+    padding: 1rem 0;
+    height: auto;
+}
+
+
+#dv-senha > div
+{
+    margin: .5rem 0 0!important;
+}

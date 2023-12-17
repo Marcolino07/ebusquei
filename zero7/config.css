@@ -1,0 +1,97 @@
+:root {
+    /* CORES PRINCIPAIS */
+    --colorMain: #0d7eff;
+    --colorMain-1: #0069e0;
+    --colorMain-2: #0167dc;
+    --colorMain-3: blue;
+
+    --color: #0d7eff;
+    --color-1: #0069e0;
+    --color-2: #0167dc;
+    --color-3: #004AAD;
+
+    --hoverColor: #84d8fe58;
+
+    --sideRight-bg: white;
+
+    /* MARGIN / PADDING */
+    --margin: 1rem;
+    --padding: 1rem;
+    --margin-mob: 1rem;
+    --padding-mob: 1rem;
+
+    /* BORDER RADIUS */
+    --radius: 4.3px;
+    --radius-1: 4.3px;
+    --radius-2: 6.3px;
+    --radius-3: 9.3px;
+    --radius-max: 30px;
+
+    /* HEADER / SIDE-LEFT / SIDE-RIGHT */
+    --sideMenu: 70vw;
+    --header: 10vh;  /* Deixar VH e não % pra nao conflitar com % horizontal */
+    --sideLeft: 14%;
+    --sideRight: 16%;
+    --main: calc(100% - (var(--sideLeft) + var(--sideRight)));
+
+    --Left-txt: 1rem;
+
+    /* ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————— full  flutuante    form       */
+
+    --darkMode-txt: #000;
+    --darkMode-bg: rgb(255, 255, 255);
+    --darkMode-opc: rgba(255, 255, 255, .8);
+    --darkMode-brd: grey;
+
+    --Bg-1: rgba(255, 255, 255, 0.5);
+    --Bg-2: #84d8fe58;
+    --Bg-3: white;
+
+    --input-1: rgba(255, 255, 255, 0.85);
+    --input-focus-bg: white;
+    --label: #0069e0;
+
+    --btnNext-1: #0d7eff;
+    --btnNext-2: #0077ff;
+    --btnNext-t: white;
+
+    --btnBack-1: rgb(225, 225, 225, 0.5);
+    --btnBack-2: #0077ff;
+    --btnBack-t: #0069e0;
+
+
+
+    --sideLeft-bg: white;
+    --sideLeft-btn: black;
+    --sideLeft-text: blue;
+
+
+    --shadow-1: 7px 6px 28px 1px rgba(0, 0, 0, 0.25);
+    --shadow-2: 4px 4px 9px 2px rgba(0, 0, 0, 0.25);
+    --shadow-3: 9.3px;
+
+    --dvBtn: 10vh;
+    --viewSize: calc(100vh - var(--header));
+    --paddinput: calc(var(--margin) - var(--margin) / 2);
+    --inputFontSize: 1.1rem;
+}
+
+.mobile {
+    --header: 7vh;
+    --sideLeft: 0px;
+    --sideRight: 0px;
+    --viewSize: calc(100vh - var(--header));
+    --margin: 1rem;
+    --padding: 1rem;
+    --inputFontSize: 1.2rem;
+
+    --margin-mob: calc(var(--margin) / 2);
+    --padding-mob: calc(var(--padding) / 2);
+}
+
+.dark-mode {
+    --darkMode-txt: #fff;
+    --darkMode-bg: #000;
+    --darkMode-opc: rgba(000, 000, 000, .9);
+    --darkMode-brd: grey;
+}

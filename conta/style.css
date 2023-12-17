@@ -1,0 +1,323 @@
+:root {
+    --text: #5e5b5e;
+    --primary: #fefefe;
+    --seconday: #7691bf;
+    --tertiary: #516fa3;
+    --background: #faf3fc;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main {
+    background: linear-gradient(13deg, rgba(246, 242, 214, 1) 0%, rgba(209, 198, 198, 1) 26%, rgba(60, 58, 58, 1) 74%) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.x2 {
+    margin-bottom: 1rem;
+}
+
+.card {
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    width: 70%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.27);
+}
+
+.conteudo {
+    text-align: -webkit-center;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.conteudo:not(.mobile .conteudo) {
+    display: block!important;
+}
+
+.mobile .conteudo {
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile .card {
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.mobile main {
+    margin: 0 !important;
+    border-radius: 0;
+}
+
+main {
+    margin: 0 !important;
+    width: 100% !important;
+
+}
+
+.call {
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    background: transparent;
+    color: var(--primary);
+    text-align: center;
+    z-index: 200;
+    opacity: 1;
+    transition: 1s all ease;
+}
+
+#sign-in-call {
+    left: 0;
+    right: unset;
+}
+
+#sign-up-call {
+    left: unset;
+    right: 0;
+}
+
+.hide {
+    opacity: 1;
+    transform: translateY(200%);
+}
+
+
+#cover {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: rgb(167, 210, 251);
+    background: linear-gradient(196deg, rgba(167, 210, 251, 1) 39%, rgba(37, 213, 242, 1) 100%);
+    z-index: 1;
+    transition: 1s all ease;
+}
+
+.right {
+    transform: translateX(100%);
+}
+
+.left {
+    transform: translateX(0%);
+}
+
+.call .title {
+    color: var(--primary);
+}
+
+.title {
+    font-family: "Trenda";
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #383838;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.2rem 0;
+}
+
+.social-container {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.143);
+    margin: 0 0.5rem;
+    font-size: 1.3rem;
+    padding: 1.3rem;
+    border: 0.0133rem solid rgba(0, 0, 0, 0.143);
+    color: var(--text);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    color: var(--text);
+}
+
+.subtitle {
+    margin-bottom: 0.6rem;
+}
+
+.form-field {
+    width: 100%;
+    margin: 0 0 1.2rem;
+    border: none;
+    background: rgb(228, 228, 228);
+    padding: 1rem;
+}
+
+.form-field:focus {
+    outline-color: var(--secondary);
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.forgot-password {
+    cursor: pointer;
+    margin: 0.5rem 0 1.5rem;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.form-btn {
+    box-shadow: 3px 4px 0px 0px #899599;
+    background: linear-gradient(to bottom, #ededed 5%, #77d7f5 100%);
+    background-color: #ededed;
+    border-radius: 16px;
+    border: 1px solid #d6bcd6;
+    cursor: pointer;
+    color: #080808;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 7px 44px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #e1e2ed;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.form-btn:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.188);
+    transform: translateY(-2%);
+}
+
+.call .subtitle {
+    opacity: 0.7;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+
+.call-btn {
+    cursor: pointer;
+    border: 0.063rem solid var(--primary);
+    color: var(--primary);
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    background-color: transparent;
+    padding: 0.8rem 3.5rem;
+    transition: 0.5s all ease;
+}
+
+.call-btn:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.188);
+    transform: translateY(-2%);
+}
+
+#cover {
+    opacity: 2;
+}
+
+a:has(.logo) {
+    display: inline;
+}
+
+.logo {
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+
+
+.mobile .form-section:not(.block) {
+    /* display: none; */
+}
+
+html {
+    height: 100vh !important;
+}
+
+.mode-phone {
+    display: none;
+}
+
+.mobile .mode-phone {
+    display: block;
+    margin-top: 15px;
+}
+
+#ja-tenho, #nao-tenho {
+    margin-top: 10px;
+}
+
+.x2 {
+    width: 100%;
+
+}
+
+
+
+.mobile #criarConta {
+    display: none;
+}
+
+.mobile .form-section {
+    width: auto !important;
+}
+
+.mobile #cover,
+.mobile #sign-in-call,
+.mobile #sign-up-call {
+    display: none;
+}
+
+.form-section {
+    width: auto !important;
+}
+
+
+label:has(input), .dv-pass{
+    width: 100%;
+}

@@ -1,0 +1,73 @@
+:root {
+    --largura1: 80%;
+    --largura2: 80%;
+}
+
+.mobile {
+    --largura1: 100%;
+    --largura2: 98%;
+}
+
+.slideBox, .slogan, .cardSlide {
+    width: var(--largura1);
+}
+
+section{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0 !important;
+
+}
+main{
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(bg2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.interface{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-content: flex-end;
+    margin-left: 10vw;
+
+}
+.interface-p{
+    color: white;
+}
+section button{
+    width: 300px;
+}
+Button:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+Button:active {
+	position:relative;
+	top:1px;
+}
+.interface-p{
+
+    font-size: 50px;
+    font-family: 'Young Serif', serif;
+}
+
+.interface-button{
+    margin-top: .5rem;
+    padding:7px 44px;
+
+}
+
+.logo-home{
+    width: 25vw;
+    /* height: 40vh; */
+    margin-top: 7vw;
+}
+
+
+main:not(aside + main) .dv-navigation {
+    display: none!important;
+}

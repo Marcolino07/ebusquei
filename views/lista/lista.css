@@ -1,0 +1,151 @@
+
+article {
+    padding: var(--padding);
+    border: 2px solid #12d4e7;
+}
+
+article > .dv-historico {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article h2 {
+    text-align: left!important;
+}
+
+article button, article .btn {
+    width: 40%;
+    padding: .4rem;
+    min-width: fit-content;
+}
+
+.dv-historico button:first-of-type {
+    background-color: var(--color)!important;
+}
+
+.dv-historico button, .dv-historico .btn {
+    height: 2rem;
+    width: 40%;
+    border: 1px solid grey;
+    color: #fff;
+}
+
+.btn-editar{
+    background-color: #a6a6a6!important;
+}
+.btn-termos{
+    background-color: #ff914d!important;
+}
+.btn-avaliar{
+    background-color: #ff66c4!important;
+}
+.btn-repetir{
+    background-color: #3bb6ff!important;
+}
+
+/* STATUS - SERVIÇO / PAGAMENTO – – – – – – – – – – ——————————————————————————————————————————————————————————————————————————————————————————————————— */
+.dv-infos {width: 70%}
+.dv-status{width: 30%}
+
+
+.dv-infos p {
+    text-align: left!important;
+    margin: .3rem 0;
+    padding-right: var(--padding);
+}
+.dv-infos p span {
+    padding-right: var(--padding);
+}
+
+.dv-status p{
+    /* text-shadow: 1px 1px 1px #000; */
+    color: #fff;
+    text-align: center;
+    font-size: .8rem;
+    margin-bottom: var(--margin);
+}
+.status-enviado, .status-aguardando{
+    background-color: #a6a6a6
+}
+.status-agendar, .status-cortesia{
+    background-color: #ffde59
+}
+.status-realizado, .status-parcial {
+    background-color: #7ed957
+}
+.status-recusado, .status-compensacao, .status-estornado{
+    background-color: #d9d9d9
+}
+.status-avaliado, .status-pago {
+    background-color: #3bb6ff
+}
+.status-cancelado, .status-atrasado{
+    background-color: #ff5757
+}
+.status-pendente {
+    background-color: #ff914d
+}
+.status-agendado {
+    background-color: #ff66c4
+}
+
+
+/* SISTEMA DE AVALIAÇÕES – – – – – – – – – – ——————————————————————————————————————————————————————————————————————————————————————————————————————————— */
+.dv-avaliacao {
+    background-color: #fff;
+    padding: var(--padding);
+    border-radius: var(--radius-3);
+    border: 1px solid #000;
+}
+.dv-avaliacao h3 {
+    color: var(--color);
+    font-size: 1rem;
+    text-align: center;
+}
+ul.avaliacao {
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    margin-bottom: var(--margin);
+
+}
+.mobile ul.avaliacao {
+    justify-content: space-around;
+}
+
+.dv-btn .btn-cancel {
+    background-color: white;
+    color: var(--color);
+    font-weight: bold;
+    border: 3.3px solid var(--color);
+}
+
+.dv-btn .btn-confirm {
+    background-color: var(--color);
+    color:  white;
+    border: 3.3px solid var(--color);
+}
+
+/* Estrelas ---------------------------------------------------------------- */
+.star-icon{
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 3rem;
+    filter: drop-shadow(1px 1px 1px red);
+    transition: transform .1s ease-in-out;
+}
+.star-icon:hover
+{
+    transform: scale(1.5);
+    filter: drop-shadow(2px 2px .1px var(--color));
+}
+.avaliacao:not(.avaliacao:has(> .ativo)) .star-icon::before {content:"☆"}
+
+.ativo ~ .star-icon::before {content:"☆"}
+
+.star-icon::before {content:"★"}
+
+.btn-cancelar {
+    background-color: #ff5757!important;
+}

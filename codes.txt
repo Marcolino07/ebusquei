@@ -1,0 +1,31 @@
+    $sql = "CREATE TABLE IF NOT EXISTS mercado (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        nome INT NOT NULL,
+        cidade varchar(30) NOT NULL
+    )default charset = utf8mb4;";
+
+    $GLOBALS['pdo']->query($sql);
+
+
+    // ======================================================
+
+
+    $sql = "INSERT INTO mercado (nome, cidade) VALUES ('Atacadão','Itanhaém'),('Mercadão','Itanhaém'),('Tenda','Itanhaém')";
+    $GLOBALS['pdo']->query($sql);
+
+    // ======================================================
+
+    $sql = "CREATE TABLE IF NOT EXISTS produto (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        id_mercado INT,
+        nome varchar(30),
+        marca varchar(30),
+        valor decimal(10,2),
+        data_cad TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        FOREIGN KEY (id_mercado) REFERENCES mercado(id)
+    )default charset = utf8mb4";
+
+    $GLOBALS['pdo']->query($sql);
+
+
+    // ======================================================
