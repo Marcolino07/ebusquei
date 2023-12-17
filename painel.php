@@ -18,7 +18,7 @@ $_SESSION['id_usuario'] = 1;
         <?php
             file_exists("views/$nav/$nav-left.php") ? include("views/$nav/$nav-left.php") : include ('side-left.php');
         ?>
-    </aside>
+    </aside>wefewfwefefwwefwef
     <main>
         <?php
             if(isset($_GET['nav']))
